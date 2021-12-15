@@ -12,7 +12,7 @@ package Factory;
  */
 public class NotificationExecutorFactory {
    public static NotificationExecutor getNotificationExecutor(String executorType) {
-       if(executorType.equals("Email"))
+       if(executorType.equals("EMAIL"))
          return new EmailNotificationExecutor();
        if(executorType.equals("SMS"))
          return new SMSNotificationExecutor();
